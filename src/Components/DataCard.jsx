@@ -1,10 +1,12 @@
 import { PiTwitterLogoThin } from "react-icons/pi";
 import { CiLocationOn } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
+import { TiPin } from "react-icons/ti";
+import { IoPeople } from "react-icons/io5";
 function DataCard({userData}){
     return(
         <>
-        <div className="text-amber-50 flex flex-col items-start justify-center mt-5 px-10 py-3
+        <div className="text-amber-50 flex flex-col items-start justify-center mt-8 px-5 py-4
         inset-0 card-background rounded-lg">
         <div className="flex items-center justify-center gap-4">
         <img src={userData.avatar_url} alt="user-profile-picture"
@@ -15,15 +17,15 @@ function DataCard({userData}){
         </div>
         </div>
         <div className="px-5 mt-3 text-lg">
-        <p className="mt-2">Bio : {userData.bio || "No bio available"}</p>
+        <p className="mt-2">{userData.bio || "No bio available"}</p>
         <div className="my-3 flex gap-14">
         <p className="flex items-center gap-2"><PiTwitterLogoThin />{userData.twitter_username || "No twitter username"}</p>
         <p className="flex items-center gap-2"><CiLocationOn />{userData.location || "No location available"}</p>
         </div>
         <div className="my-3 flex gap-14">
-        <p>{userData.followers || "No followers"} Followers</p>
+        <p className="flex items-center gap-2"><IoPeople />{userData.followers || "No followers"} Followers</p>
         <p>{userData.following || "No following"} Following</p>
-        <p>{userData.public_repos || "No public repos"} Repos</p>
+        <p className="flex items-center gap-2"><TiPin />{userData.public_repos || "No public repos"} Repos</p>
         </div>
         </div>
 
