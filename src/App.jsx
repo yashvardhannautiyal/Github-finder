@@ -1,13 +1,13 @@
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import HeroSection from "./Components/HeroSection";
 function App (){
   return(
-    <>
+    <div className="min-h-screen flex flex-col">
     <Navbar />
-    <div >
-      <p className="h-full text-4xl">this is app</p></div>
+    <HeroSection className="flex-grow" />
     <Footer /> 
-    </>
+    </div>
   )
 }
 
