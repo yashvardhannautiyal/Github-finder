@@ -36,7 +36,7 @@ function HeroSection() {
   return (
     <>
       <div className="bg-gray-950 text-amber-50 flex flex-col items-center justify-center flex-grow px-4">
-        <p className="text-6xl text-purple-700 font-bold mb-6">
+        <p className="text-2xl sm:text-6xl text-purple-700 font-bold mb-2 sm:mb-6">
           Search Github User Id
         </p>
         <SearchBox
@@ -45,7 +45,7 @@ function HeroSection() {
           fetchData={fetchData}
         />
 
-        {error && <p className="text-red-600 mt-4 font-medium">{error}</p>}
+        {error && <p className="text-red-600 mt-2 sm:mt-4 text-sm sm:text-lg sm:font-medium">{error}</p>}
         {userData && <DataCard userData={userData} />}
       </div>
     </>
