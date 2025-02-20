@@ -1,11 +1,10 @@
 function SearchBox({ userName, setUserName, fetchData }) {
-
-    //function to search when enter key is pressed
-    const handleEnter = (event) =>{
-        if(event.key == "Enter"){
-            fetchData();
-        }
+  //function to search when enter key is pressed
+  const handleEnter = (event) => {
+    if (event.key == "Enter") {
+      fetchData();
     }
+  };
   return (
     <>
       <div className="flex text-sm sm:text-lg font-bold">

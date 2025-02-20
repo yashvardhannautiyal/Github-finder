@@ -1,14 +1,12 @@
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
 import HeroSection from "./Components/HeroSection";
-function App (){
-  return(
-    <div className="min-h-screen flex flex-col">
-    <Navbar />
-    <HeroSection className="flex-grow" />
-    <Footer /> 
+function App() {
+  return (
+    <div className="flex flex-col h-screen">
+      <Navbar />
+      <HeroSection className="flex-grow" />
     </div>
-  )
+  );
 }
 
 export default App;
